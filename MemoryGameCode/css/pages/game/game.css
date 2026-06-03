@@ -1,0 +1,142 @@
+@import "../../global/style.css";
+@import "./game-resp.css";
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* min-height: 100vh; */
+  align-items: center;
+  margin-top: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffffcc;
+  font-size: 1.4em;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 0 30px;
+  border-radius: 5px;
+}
+
+/*container que organiza grid + placares */
+.game-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* imagem dos players */
+.score img {
+  max-width: 140px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/*placares laterais */
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 1.4em;
+  text-align: center;
+
+  /*borda*/
+  box-sizing: border-box;
+}
+
+.left {
+  text-align: center;
+}
+
+.right {
+  text-align: center;
+}
+
+/*comportamento do singleplayer */
+.game-area:not(.multiplayer) {
+  flex-direction: column;
+}
+
+.game-area:not(.multiplayer) .score {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 30px;
+}
+
+.card {
+  aspect-ratio: 7/10;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+  background-color: #616161;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #ff6ad7;
+  border-radius: 5px;
+  transition: all 1000ms ease;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url('../../../../Elementos/imagens/cartas/season1/back.png');
+  backface-visibility: hidden;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+/* Container dos botões */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button-container button {
+  background-color: #ee665c;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px 15px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #d55a50;
+}

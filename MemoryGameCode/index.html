@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#21936">
+
+  <link rel="stylesheet" href="css/pages/home/index.css">
+
+  <link rel="shortcut icon" href="../Elementos/imagens/logo/fav-icon.png" type="image/x-icon">
+
+  <script defer src="js/pages/login.js"></script>
+
+  <title>Jogo da Memória - Login</title>
+</head>
+
+<body>
+  <!-- Formulário de login -->
+  <form class="login-form">
+    <!-- Cabeçalho com logo e título -->
+    <div class="login-header">
+      <img src="../Elementos/imagens/logo/Steven_Universe_logo.png" alt="Steven universe">
+      <h1>Jogo da Memória</h1>
+    </div>
+
+    <!-- Input para Player 1 -->
+    <input type="text" placeholder="Player 1" class="login-input" id="player1">
+
+    <!-- Player 2 -->
+    <input type="text" placeholder="Player 2" id="player2" class="login-input" style="display: none;">
+
+    <!-- seleção de modo -->
+    <div class="mode-select">
+      <button class="select-btn" type="button" id="singleBtn">Single Player</button>
+      <button class="select-btn" type="button" id="multiBtn">Multiplayer</button>
+    </div>
+
+    <!--seleção de personagens (inicia escondido) -->
+    <div class="character-select" id="charSelect">
+      <p class="title-char">Escolha os personagens:</p>
+
+      <!--Player 1 -->
+      <div class="characters">
+        <span class="player-char p1-char">Player 1</span>
+        <button type="button" class="char-btn" data-player="1" data-char="steven">Steven</button>
+        <button type="button" class="char-btn" data-player="1" data-char="garnet">Garnet</button>
+        <button type="button" class="char-btn" data-player="1" data-char="perola">Pérola</button>
+        <button type="button" class="char-btn" data-player="1" data-char="ametista">Ametista</button>
+      </div>
+
+      <!--Player 2 -->
+      <div class="characters">
+        <span class="player-char p2-char">Player 2</span>
+        <button type="button" class="char-btn" data-player="2" data-char="steven">Steven</button>
+        <button type="button" class="char-btn" data-player="2" data-char="garnet">Garnet</button>
+        <button type="button" class="char-btn" data-player="2" data-char="perola">Pérola</button>
+        <button type="button" class="char-btn" data-player="2" data-char="ametista">Ametista</button>
+      </div>
+    </div>
+
+    <!-- Botão de iniciar jogo -->
+    <button type="submit" class="login-btn" disabled>Play</button>
+  </form>
+
+  <!-- Música de fundo -->
+  <audio id="musica" loop>
+    <source src="../Elementos/song/Love_like_you.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Botão de música -->
+  <button id="btnMusica"></button>
+
+  <script>
+    if ('serviceWorker' in navigator){
+      navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service worker registrado com sucesso!'))
+      .catch(err => console.log('Erro no registro do Service Worker: ', err))
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2em !important;
+    padding: 20px !important;
+    max-width: 90% !important;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #c2c2c2cc !important;
+    margin: 0 0 5px !important;
+  }
+
+  .game-area:not(.multiplayer)  {
+    align-content: center;
+    margin: 2px;
+  }
+
+  .game-area {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .score {
+    font-size: 1.2em !important;
+    min-width: 100px;
+    padding: 0px !important;
+  }
+
+  .score img {
+    width: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 10px !important;
+    max-width: 90% !important;
+    order: 3;
+    flex: 0 0 100%; /* garante que o grid ocupa linha inteira */
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button-container button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  /* cria "linha" dos players */
+  .left {
+    order: 1;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  /* players dividem a linha */
+  .left,
+  .right {
+    flex: 0 0 45%;  /* faz os dois ficarem lado a lado */
+    width: 45%;
+  }
+}

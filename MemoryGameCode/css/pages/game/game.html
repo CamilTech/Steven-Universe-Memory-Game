@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./game.css">
+
+  <link rel="shortcut icon" href="../../../../Elementos/imagens/logo/fav-icon.png" type="image/x-icon">
+
+  <script defer src="../../../js/pages/game.js"></script>
+
+  <title>Jogo da Memória - Steven Universe</title>
+</head>
+
+<body>
+
+  <!-- Cabeçalho com informações do jogador e timer -->
+  <main>
+    <header>
+      <span class="player"></span>
+
+      <span id="turn">Player 1 turn</span>
+
+      <span>Tempo: <span class="timer">00</span></span>
+    </header>
+
+    <!--container geral do jogo -->
+    <div class="game-area">
+
+      <!--placar esquerdo -->
+      <div class="score left">
+        <img id="p1-img">
+        <span id="p1"></span>
+      </div>
+
+      <!-- Grid onde as cartas são exibidas -->
+      <div class="grid"></div>
+
+      <!--placar direito -->
+      <div class="score right">
+        <img id="p2-img">
+        <span id="p2"></span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Botões de controle -->
+  <div class="button-container">
+    <button onclick="location.reload()">Reiniciar jogo</button>
+    <button onclick="window.location='../../../index.html'">Voltar ao Login</button>
+  </div>
+  <!-- Botão de música -->
+  <button id="btnMusica"></button>
+
+  <!--musica de fundo-->
+  <audio id="musica" loop>
+    <source src="../../../../Elementos/song/Love_like_you.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  body {
+    align-items: center;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .login-header h1 {
+    font-size: 2em;
+  }
+
+  .login-input {
+    font-size: 1.2em;
+    padding: 12px;
+    max-width: 250px;
+  }
+
+  .select-btn {
+    font-size: 1em;
+    padding: 10px;
+    max-width: 250px;
+  }
+
+  .login-btn {
+    font-size: 1.2em;
+    padding: 12px;
+    max-width: 250px;
+  }
+
+  .character-select p {
+    font-size: 1em;
+  }
+
+  .character-select {
+    max-width: 100%;
+    margin: 15px;
+  }
+
+  .characters {
+    justify-content: right !important;
+  }
+
+  .char-btn {
+    font-size: 0.9em;
+    padding: 8px;
+    flex: 4 25%;    /* cada botão ocupa ~40% da linha */
+    max-width: 120px;
+
+  }
+
+  .characters {
+    flex-direction: row;
+    align-items: center;
+  }
+}
