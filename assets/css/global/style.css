@@ -1,10 +1,10 @@
-@import url('../../../Elementos/font/Bubbly-Soda.ttf');
-@import "./style-resp.css";
+@import url('/assets/Elementos/font/Bubbly-Soda.ttf');
+@import "/assets/css/global/style-resp.css";
 
 @font-face {
   font-family: 'Bubbly Soda';
-  src: url('../../../Elementos/font/Bubbly-Soda.ttf') format('ttf'),
-    url('../../../Elementos/font/Bubbly-Soda.ttf') format('truetype');
+  src: url('/assets/Elementos/font/Bubbly-Soda.ttf') format('ttf'),
+    url('/assets/Elementos/font/Bubbly-Soda.ttf') format('truetype');
 }
 
 /* reset css*/
@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url('../../../Elementos/imagens/background/bg-season1.png');
+  background-image: url('/assets/Elementos/imagens/background/bg-season1.png');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -35,7 +35,7 @@ body {
   top: 20px;
   left: 20px;
   transform: rotate(270deg);
-  background: url('../../../Elementos/imagens/Bolhinha_Musica/bolha_musica.png') no-repeat center;
+  background: url('/assets/Elementos/imagens/Bolhinha_Musica/bolha_musica.png') no-repeat center;
   background-size: cover;
   border: none;
   border-radius: 50%;

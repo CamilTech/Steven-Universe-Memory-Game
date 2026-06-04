@@ -95,7 +95,7 @@ const handleSubmit = (e) => {
     localStorage.setItem('char2', selectedChar2); //
   }
 
-  window.location = 'css/pages/game/game.html';
+  window.location = '/assets/css/pages/game/game.html';
 }
 
 // Adiciona event listeners para inputs
