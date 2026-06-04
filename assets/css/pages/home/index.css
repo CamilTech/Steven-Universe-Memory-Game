@@ -1,5 +1,5 @@
-@import "/assets/css/global/style.css";
-@import "/assets/css/pages/home/index-resp.css";
+@import "../../global/style.css";
+@import "./index-resp.css";
 
 .login-form {
   align-items: center;

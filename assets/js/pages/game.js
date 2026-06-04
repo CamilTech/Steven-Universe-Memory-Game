@@ -35,19 +35,19 @@ let currentTrack = 'love';
 const charactersData = {
   steven: {
     color: "#FF77C6",
-    img: "/assets/Elementos/imagens/cartas/season1/steven.png"
+    img: "../../../Elementos/imagens/cartas/season1/steven.png"
   },
   garnet: {
     color: "#8F0004",
-    img: "/assets/Elementos/imagens/cartas/season1/garnet.png"
+    img: "../../../Elementos/imagens/cartas/season1/garnet.png"
   },
   perola: {
     color: "#82E8FF",
-    img: "/assets/Elementos/imagens/cartas/season1/perola.png"
+    img: "../../../Elementos/imagens/cartas/season1/perola.png"
   },
   ametista: {
     color: "#9700DE",
-    img: "/assets/Elementos/imagens/cartas/season1/ametista.png"
+    img: "../../../Elementos/imagens/cartas/season1/ametista.png"
   }
 };
 
@@ -207,7 +207,7 @@ const creatCard = (character) => {
   const front = createElement('div', 'face front');
   const back = createElement('div', 'face back');
 
-  front.style.backgroundImage = `url('/assets/Elementos/imagens/cartas/season1/${character}.png')`;
+  front.style.backgroundImage = `url('../../../Elementos/imagens/cartas/season1/${character}.png')`;
 
   card.appendChild(front);
   card.appendChild(back);
@@ -232,7 +232,7 @@ const loadgame = () => {
 // Função para definir a fonte da trilha sonora
 const setSoundtrackSource = () => {
   if (!musicaAudio || currentTrack === 'soundtrack') return;
-  musicaAudio.src = '/assets/Elementos/song/soundtrack.mp3';
+  musicaAudio.src = '../../../Elementos/song/soundtrack.mp3';
   musicaAudio.load();
   currentTrack = 'soundtrack';
   soundtrackReady = true;

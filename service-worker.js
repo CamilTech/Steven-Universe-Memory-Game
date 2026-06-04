@@ -1,18 +1,14 @@
 const CACHE_NAME = 'meu-pwa-cache-v3';
 const urlsToCache = [
-  '/assets/',
-  '/assets/index.html',
-
-  '/assets/manifest.json',
-  '/assets/js/pages/login.js',
-  '/assets/js/pages/game.js',
-
-  '/assets/css/pages/home/index.css',
-  '/assets/css/pages/game/game.css',
-
-  '/assets/Elementos/imagens/logo/fav-icon.png',
-  '/assets/Elementos/song/Love_like_you.mp3',
-  '/assets/Elementos/song/soundtrack.mp3'
+  'index.html',
+  'assets/manifest.json',
+  'assets/js/pages/login.js',
+  'assets/js/pages/game.js',
+  'assets/css/pages/home/index.css',
+  'assets/css/pages/game/game.css',
+  'assets/Elementos/imagens/logo/fav-icon.png',
+  'assets/Elementos/song/Love_like_you.mp3',
+  'assets/Elementos/song/soundtrack.mp3'
 ];
 
 self.addEventListener('install', event => {
