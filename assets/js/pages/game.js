@@ -308,7 +308,7 @@ window.onload = () => {
     const data = charactersData[char1];
     const isMobile = window.innerWidth <= 768;
     const iconChar = char1.charAt(0).toUpperCase();
-    if (p1Img) p1Img.src = isMobile ? `/assets/Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
+    if (p1Img) p1Img.src = isMobile ? `../../../Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
 
     const leftBox = document.querySelector('.left');
     if (leftBox) leftBox.style.backgroundColor = data.color;
@@ -319,7 +319,7 @@ window.onload = () => {
     const data = charactersData[char2];
     const isMobile = window.innerWidth <= 768;
     const iconChar = char2.charAt(0).toUpperCase();
-    if (p2Img) p2Img.src = isMobile ? `/assets/Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
+    if (p2Img) p2Img.src = isMobile ? `../../../Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
 
     const rightBox = document.querySelector('.right');
     if (rightBox) rightBox.style.backgroundColor = data.color;
@@ -331,12 +331,12 @@ window.onload = () => {
     if (char1 && p1Img) {
       const data = charactersData[char1];
       const iconChar = char1.charAt(0).toUpperCase();
-      p1Img.src = isMobile ? `/assets/Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
+      p1Img.src = isMobile ? `../../../Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
     }
     if (gameMode === 'multi' && char2 && p2Img) {
       const data = charactersData[char2];
       const iconChar = char2.charAt(0).toUpperCase();
-      p2Img.src = isMobile ? `/assets/Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
+      p2Img.src = isMobile ? `../../../Elementos/imagens/icon/icon-${iconChar}.png` : data.img;
     }
   });
 }
