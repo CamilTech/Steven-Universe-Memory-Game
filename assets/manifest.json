@@ -1,46 +1,46 @@
 {
   "name": "Steven Universe Memory Game",
   "short_name": "Memory Game",   
-  "start_url": "/assets/index.html",
+  "start_url": "../index.html",
   "display": "standalone",
-  "background_color": "#ffff",
+  "background_color": "#ffffff",
   "theme_color": "#ff7eba",
   "icons":[
     {
-      "src": "/assets/Elementos/imagens/logo/app-icons/app-icon192.png",
+      "src": "Elementos/imagens/logo/app-icons/app-icon192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/Elementos/imagens/logo/app-icons/app-icon512.png",
+      "src": "Elementos/imagens/logo/app-icons/app-icon512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/assets/Elementos/imagens/screenshots/screenshot-1.png",
+      "src": "Elementos/imagens/screenshots/screenshot-1.png",
       "sizes": "372x736",
       "type": "image/png",
       "label": "Tela do jogo",
       "form_factor": "wide"
     },
     {
-      "src": "/assets/Elementos/imagens/screenshots/screenshot-2.png",
+      "src": "Elementos/imagens/screenshots/screenshot-2.png",
       "sizes": "372x736",
       "type": "image/png",
       "label": "Tela móvel",
       "form_factor": "narrow"
     },
     {
-      "src": "/assets/Elementos/imagens/screenshots/screenshot-3.png",
+      "src": "Elementos/imagens/screenshots/screenshot-3.png",
       "sizes": "372x736",
       "type": "image/png",
       "label": "Tela do jogo",
       "form_factor": "wide"
     },
     {
-      "src": "/assets/Elementos/imagens/screenshots/screenshot-4.png",
+      "src": "Elementos/imagens/screenshots/screenshot-4.png",
       "sizes": "372x736",
       "type": "image/png",
       "label": "Tela do jogo",
